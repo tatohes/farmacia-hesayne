@@ -373,3 +373,28 @@ aside {
 .tarjeta__icono i {
     line-height: 30px;
 }
+
+.avatar {
+    border-radius: 50%;
+    background-color: grey;
+    padding: 5px;
+
+    &--small {
+        width: 100px;
+        height: 100px;
+        @extend .avatar;
+    }
+
+    &--medium {
+        width: 300px;
+        height: 300px;
+        @extend .avatar;
+    }
+
+    &--large {
+        width: 500px;
+        height: 500px;
+        @extend .avatar;
+    }
+}
+
