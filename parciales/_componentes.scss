@@ -1,0 +1,381 @@
+                                        /* PRIMER CONTENEDOR INDEX */
+
+.caja {
+    /* border: 3px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 5rem;
+    max-width: 1600px; */
+    width: 95%;
+    min-height: 100vh;
+    /* padding: 1rem; */
+}
+
+.grid__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.grid__flex h2 {
+    font-size: 140px;
+    line-height: 120px;
+}
+
+.grid__flex h1 {
+    font-size: 60px;
+    margin-bottom: none;
+    justify-self: end;
+}
+
+.grid__flex p {
+    font-size: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 48% 50%;
+    grid-template-rows: 1fr;
+    /* grid-template-areas: 
+        "imagen copete"
+        "imagen titulo"
+        "imagen texto"; 
+    justify-items: stretch;
+    align-items: left; */
+    justify-content: space-between; 
+    margin-bottom: 100px;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.hero__copete {
+    margin-bottom: -90px;
+
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+.hero__parrafo {
+    margin-top: -60px;
+
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+.hero__titulo {
+    color: rgb(240, 200, 148);
+
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+                                        /* SEGUNDO CONTENEDOR INDEX */
+
+.caja2 {
+    /* border: 3px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    max-width: 1600px;
+    width: 95%;
+    min-height: 50vh;
+    /* padding: 1rem; */
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column; 
+}
+
+.grid__flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.grid__flex2 h3 {
+    font-size: 70px;
+    line-height: 120px;
+}
+
+.iconitoWapp {
+    margin-top: -50px;
+}
+
+                                        /* TABLA PÁGINA FARMACIAS DE TURNO */
+
+.tabla {
+    color: antiquewhite;
+    font-size: 50px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+                                        /* CONTENEDOR PÁGINA CONTACTO */
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "logoTelefono telefono qr"
+        "logoInstagram instagram qr"
+        "logoGmail gmail qr"
+        "logoDireccion direccion qr";
+    gap: 10px;
+    flex-direction: row;
+    color: antiquewhite;
+    margin-bottom: 200px;
+}
+
+/* .grid3 > * {
+    border: 1px solid orange;
+} */
+
+section#logoTelefono {
+    grid-area: logoTelefono;
+    align-self: center;
+    justify-self: center;
+}
+
+section#logoInstagram {
+    grid-area: logoInstagram;
+    align-self: center;
+    justify-self: center;
+}
+
+section#logoGmail {
+    grid-area: logoGmail;
+    align-self: center;
+    justify-self: center;
+}
+
+section#logoDireccion {
+    grid-area: logoDireccion;
+    align-self: center;
+    justify-self: center;
+}
+
+section#telefono {
+    grid-area: telefono;
+    align-self: center;
+    justify-self: left;
+    font-size: 40px;
+}
+
+section#instagram {
+    grid-area: instagram;
+    align-self: center;
+    justify-self: left;
+    font-size: 40px;
+}
+
+section#gmail {
+    grid-area: gmail;
+    align-self: center;
+    justify-self: left;
+    font-size: 40px;
+}
+
+section#direccion {
+    grid-area: direccion;
+    align-self: center;
+    justify-self: left;
+    font-size: 40px;
+}
+
+aside {
+    grid-area: qr;
+    align-self: center;
+}
+
+                                        /* PAGINA PERFUMERIA */
+                                        /* OFERTAS */
+
+.ofertas {
+    padding: 100px 1rem;
+    min-height: 50vh;
+    /*background-color: black; */
+    color: antiquewhite;
+}
+
+.ofertas__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* transform: scaleX(3); */
+}
+
+.ofertas__item {
+    border: 1px solid antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.ofertas__item i {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.ofertas__item p {
+    text-align: center;
+    color: antiquewhite;
+    font-style: italic;
+}
+
+.ofertas__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.ofertas__item--img {
+    padding: 0;
+    border-radius: 5px;
+}
+
+/* @keyframes efecto_perfumes {
+    0%{ width: 100px; }
+    0.2s{ width: 50px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;
+    background-color: red; }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+    background-color:green; }
+    
+} */
+/* section {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: efecto_perfumes;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+/* Animacion Grid - OVERLAY */
+
+.grid__container__img {
+    width: 100%;
+}
+
+
+.overlay {
+    /* background-color: antiquewhite; */
+    color: green;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(0%, -100%);
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.ofertas__grid:hover .overlay{
+    opacity: 1;
+
+}
+
+.grid__container__img--top {
+    margin-top: 62px;
+}
+
+
+
+                                        /* TARJETA QR WHATSAPP PÁGINA CONTACTO */
+
+.bem {
+    height: 100vh;
+    padding: 5rem 0;
+    margin-bottom: 130px;
+}
+
+.bem__h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: antiquewhite;
+    align-content: center;
+
+    margin-bottom: 2rem;
+}
+
+.tarjetaWhatsapp {
+    background-color: antiquewhite;
+    box-shadow: 5px 10px 10px rgba(10, 43, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+
+    width: 300px;
+    padding: 1rem;
+    margin: 0 auto;
+
+    position: relative;
+
+}
+
+.tarjeta__imagen {
+    border-radius: inherit;
+
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.tarjeta__titulo {
+    color: rgb(8, 77, 8);
+    font-size: 22px;
+
+    margin: 1rem 0;
+}
+
+.tarjeta__texto {
+    color: rgb(10, 117, 10);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.tarjeta__icono {
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+
+    height: 30px;
+    width: 30px;
+
+    display: block;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.tarjeta__icono i {
+    line-height: 30px;
+}
