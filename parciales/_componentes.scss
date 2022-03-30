@@ -108,7 +108,7 @@
 }
 
 .grid__flex2 {
-    @include crearFlex(center, center)
+    @include crearFlex(center, center);
     flex-direction: column;
     color: antiquewhite;
 }
@@ -229,7 +229,7 @@ aside {
 }
 
 .ofertas__item {
-    @include crearFlex(center, center)
+    @include crearFlex(center, center);
     border: 1px solid antiquewhite;
     flex-direction: column;
     margin: 1rem;
