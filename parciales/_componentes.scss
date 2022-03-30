@@ -1,4 +1,10 @@
-                                        /* PRIMER CONTENEDOR INDEX */
+@mixin crearFlex($eje-principal, $eje-secundario) {
+    display: flex;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
+
+/* PRIMER CONTENEDOR INDEX */
 
 .caja {
     /* border: 3px solid black; */
@@ -102,10 +108,8 @@
 }
 
 .grid__flex2 {
-    display: flex;
+    @include crearFlex(center, center)
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: antiquewhite;
 }
 
@@ -225,11 +229,9 @@ aside {
 }
 
 .ofertas__item {
+    @include crearFlex(center, center)
     border: 1px solid antiquewhite;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 1rem;
     padding: 1rem;
 }
