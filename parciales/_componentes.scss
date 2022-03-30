@@ -4,6 +4,12 @@
     align-items: $eje-secundario;
 }
 
+@mixin crearGrid($eje-principal, $eje-secundario) {
+    display: grid;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
+
 /* PRIMER CONTENEDOR INDEX */
 
 .caja {
@@ -18,9 +24,8 @@
 }
 
 .grid__flex {
-    display: flex;
+    @include crearFlex(center, stretch);
     flex-direction: column;
-    justify-content: center;
     color: antiquewhite;
 }
 
@@ -40,7 +45,7 @@
 }
 
 .grid {
-    display: grid;
+    @include crearGrid(center, stretch);
     grid-template-columns: 48% 50%;
     grid-template-rows: 1fr;
     /* grid-template-areas: 
@@ -49,7 +54,6 @@
         "imagen texto"; 
     justify-items: stretch;
     align-items: left; */
-    justify-content: space-between; 
     margin-bottom: 100px;
 }
 
@@ -99,10 +103,9 @@
 }
 
 .grid2 {
-    display: grid;
+    @include crearFlex(center, stretch);
     grid-template-columns: 1fr;
     grid-template-rows: 70% 30%;
-    justify-content: space-between;
     align-content: center;
     flex-direction: column; 
 }
