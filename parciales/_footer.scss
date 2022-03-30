@@ -6,10 +6,8 @@
 }
 
 .footer__contenedor {
-    display: flex;
+    @include crearFlex(space-around, center);
     flex-direction: row;
-    justify-content: space-around; /* Eje principal */
-    align-items: center; /* Eje secundario */
     flex-wrap: wrap;
 }
 

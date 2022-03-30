@@ -547,18 +547,16 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /* Eje principal */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* Eje secundario */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 100px;
@@ -635,17 +633,15 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  /* Eje principal */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* Eje secundario */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
