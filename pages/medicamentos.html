@@ -57,8 +57,43 @@
         <section>
             <h2 class="titulo">Medicamentos</h2>
         </section>
-        <section>
-            <!-- Sección contenido -->
+        <section class="form-medicamentos">
+            <form action="">
+                <div>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nombre y apellido" class="controls">
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="E-mail" class="controls">
+                </div>
+                <div>
+                    <input type="number" id="celular" name="celular" placeholder="Teléfono celular" class="controls">
+                </div>
+                <div>
+                    <input type="text" id="medicamento" name="medicamento" placeholder="Nombre del medicamento" class="controls"> 
+                </div>
+                <div>
+                    <label for="obra social">Obra social:</label>
+                    <select name="Obra Social" id="obra social">
+                        <option value="...">...</option>
+                        <option value="osde">OSDE</option>
+                        <option value="ioma">IOMA</option>
+                        <option value="swissmedical">Swiss Medical</option>
+                        <option value="amffa">AMFFA</option>
+                        <option value="medife">Medifé</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </div>              
+                <div>
+                    <label for="receta">Imagen de receta</label>
+                    <input type="file" id="receta" name="receta" class="botons">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" class="botons">
+                    <input type="reset" value="Limpiar" class="botons">
+                </div>
+            </form>
         </section>
     </main>
 
