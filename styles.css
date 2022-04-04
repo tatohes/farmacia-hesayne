@@ -129,10 +129,11 @@ html {
     justify-items: stretch;
     align-items: left; */
   margin-bottom: 100px;
+  gap: 20px;
 }
 
 .grid img {
-  width: 100%;
+  width: 95%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -557,33 +558,42 @@ aside {
   height: 500px;
 }
 
-/* .btn{
-    border-radius: 3px;
-    display: inline-block;
-    padding: 20px 15px;
-    text-decoration: none;
-    text-shadow: 0 1px 0 rgba(10, 43, 0, 0.8);
-    box-shadow: 0 1px 1px rgba(10, 43, 0, 0.8);
+.btn {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(10, 43, 0, 0.8);
+  -webkit-box-shadow: 0 1px 1px rgba(10, 43, 0, 0.8);
+          box-shadow: 0 1px 1px rgba(10, 43, 0, 0.8);
 }
 
-.btn-green{
-    color: antiquewhite;
-    background-color: rgba(37, 129, 9, 0.8);
+.btn-green {
+  color: antiquewhite;
+  background-color: rgba(37, 129, 9, 0.8);
 }
 
-.brn-green:hover{
-    background-color: rgba(22, 79, 5, 0.8);
+.brn-green:hover {
+  background-color: rgba(22, 79, 5, 0.8);
 }
 
-.btn-green:active{
-    background-color: rgba(255, 0, 0, 0.8);
-} */
+.btn-green:active {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
 .form-medicamentos {
   width: 400px;
   background: #24303c;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
+}
+
+.linea {
+  background: #550b52;
+  height: 5px;
+  width: 100%;
+  display: block;
 }
 
 /* HEADER */
