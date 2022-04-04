@@ -12,6 +12,7 @@
     /* padding: 1rem; */
 }
 
+
 .grid__flex {
     @include crearFlex(center, stretch);
     flex-direction: column;
@@ -48,19 +49,23 @@
 }
 
 .grid img {
-    width: 95%;
-    height: 100%;
+    width: 100%;
+    height: 90vh;
     object-fit: cover;
     border-radius: 20px;
 
 }
 
 .hero__copete {
-    margin-bottom: -90px;
+    margin-top: -60px;
+    margin-bottom: -100px;
 
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: 1;
+}
+.grid__flex p {
+    font-size: 20px;
 }
 
 .hero__parrafo {
@@ -207,103 +212,96 @@ aside {
     align-self: center;
 }
 
+.googlemaps {
+    margin-top: 100px;
+    background: #073c01;
+    border-radius: 20px;
+}
+
                                         /* PAGINA PERFUMERIA */
-                                        /* OFERTAS */
 
-.ofertas {
-    padding: 100px 1rem;
-    min-height: 50vh;
-    /*background-color: black; */
-    color: antiquewhite;
-}
-
-.ofertas__grid {
+.galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* transform: scaleX(3); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    gap: 20px;
+    padding: 40px 0;
+    overflow: hidden;
+    margin-bottom: 100px;
 }
 
-.ofertas__item {
-    @include crearFlex(center, center);
-    border: 1px solid antiquewhite;
-    flex-direction: column;
-    margin: 1rem;
-    padding: 1rem;
+.galeria > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.ofertas__item i {
-    font-size: 50px;
-    margin-bottom: 1rem;
-}
-
-.ofertas__item p {
-    text-align: center;
-    color: antiquewhite;
-    font-style: italic;
-}
-
-.ofertas__item img {
+.galeria img {
     width: 100%;
+    vertical-align: top;
     height: 100%;
     object-fit: cover;
-    display: block;
+    transition: transform 0.5s;
+}
+
+.galeria a:hover img {
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
 
 }
 
-.ofertas__item--img {
-    padding: 0;
-    border-radius: 5px;
-}
-
-/* @keyframes efecto_perfumes {
-    0%{ width: 100px; }
-    0.2s{ width: 50px; }
-    25%{ width: 300px; }
-    50%{ width: 200px;
-    background-color: red; }
-    75%{ width: 300px;}
-    100%{ width: 100px;
-    background-color:green; }
-    
-} */
-/* section {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    animation-name: efecto_perfumes;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-    animation-delay: 1s;
-
-/* Animacion Grid - OVERLAY */
-
-.grid__container__img {
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: transform .3s ease-in-out;
     width: 100%;
-}
-
-
-.overlay {
-    /* background-color: antiquewhite; */
-    color: green;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    transform: translate(0%, -100%);
-    transition: 0.5s ease;
-    position: relative;
-}
-
-.ofertas__grid:hover .overlay{
-    opacity: 1;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
 
 }
 
-.grid__container__img--top {
-    margin-top: 62px;
+.light-box img {
+    width: 30vw;
+    max-height: 70vh;
+}
+.light-box:target {
+    transform: scale(1);
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #073c01;
+    color: antiquewhite;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.next {
+    display: block;
+    background: #073c01;
+    color: antiquewhite;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    margin: 30px;
 }
 
 
@@ -404,90 +402,7 @@ aside {
     }
 }
 
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 95%;
-    margin: auto;
-    gap: 20px;
-    padding: 40px 0;
-    overflow: hidden;
-    margin-bottom: 100px;
-}
-
-.galeria > a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.galeria img {
-    width: 100%;
-    vertical-align: top;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
-}
-
-.galeria a:hover img {
-    filter: blur(2px);
-    transform: rotate(10deg) scale(1.3);
-
-}
-
-.light-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    transition: transform .3s ease-in-out;
-    width: 100%;
-    height: 100vh;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0);
-
-}
-
-.light-box img {
-    width: 30vw;
-    max-height: 70vh;
-}
-.light-box:target {
-    transform: scale(1);
-}
-
-.close {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    background: #073c01;
-    color: antiquewhite;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-}
-
-.next {
-    display: block;
-    background: #073c01;
-    color: antiquewhite;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 50%;
-    margin: 30px;
-}
-
+                                            /* MEDICAMENTOS */
 
 .form-medicamentos {
     width: 1000px;

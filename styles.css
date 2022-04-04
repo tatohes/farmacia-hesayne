@@ -133,21 +133,26 @@ html {
 }
 
 .grid img {
-  width: 95%;
-  height: 100%;
+  width: 100%;
+  height: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
 }
 
 .hero__copete {
-  margin-bottom: -90px;
+  margin-top: -60px;
+  margin-bottom: -100px;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+.grid__flex p {
+  font-size: 20px;
 }
 
 .hero__parrafo {
@@ -365,203 +370,13 @@ aside {
       align-self: center;
 }
 
+.googlemaps {
+  margin-top: 100px;
+  background: #073c01;
+  border-radius: 20px;
+}
+
 /* PAGINA PERFUMERIA */
-/* OFERTAS */
-.ofertas {
-  padding: 100px 1rem;
-  min-height: 50vh;
-  /*background-color: black; */
-  color: antiquewhite;
-}
-
-.ofertas__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 300px;
-      grid-template-rows: 300px;
-  max-width: 1200px;
-  margin: 0 auto;
-  /* transform: scaleX(3); */
-}
-
-.ofertas__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid antiquewhite;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.ofertas__item i {
-  font-size: 50px;
-  margin-bottom: 1rem;
-}
-
-.ofertas__item p {
-  text-align: center;
-  color: antiquewhite;
-  font-style: italic;
-}
-
-.ofertas__item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-}
-
-.ofertas__item--img {
-  padding: 0;
-  border-radius: 5px;
-}
-
-/* @keyframes efecto_perfumes {
-    0%{ width: 100px; }
-    0.2s{ width: 50px; }
-    25%{ width: 300px; }
-    50%{ width: 200px;
-    background-color: red; }
-    75%{ width: 300px;}
-    100%{ width: 100px;
-    background-color:green; }
-    
-} */
-/* section {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    animation-name: efecto_perfumes;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-    animation-delay: 1s;
-
-/* Animacion Grid - OVERLAY */
-.grid__container__img {
-  width: 100%;
-}
-
-.overlay {
-  /* background-color: antiquewhite; */
-  color: green;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-  -webkit-transform: translate(0%, -100%);
-          transform: translate(0%, -100%);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  position: relative;
-}
-
-.ofertas__grid:hover .overlay {
-  opacity: 1;
-}
-
-.grid__container__img--top {
-  margin-top: 62px;
-}
-
-/* TARJETA QR WHATSAPP PÁGINA CONTACTO */
-.bem {
-  height: 100vh;
-  padding: 5rem 0;
-  margin-bottom: 130px;
-}
-
-.bem__h2 {
-  text-align: center;
-  letter-spacing: 3px;
-  font-size: 30px;
-  color: antiquewhite;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-bottom: 2rem;
-}
-
-.tarjetaWhatsapp {
-  background-color: antiquewhite;
-  -webkit-box-shadow: 5px 10px 10px rgba(10, 43, 0, 0.8);
-          box-shadow: 5px 10px 10px rgba(10, 43, 0, 0.8);
-  border-radius: 10px;
-  text-align: center;
-  width: 300px;
-  padding: 1rem;
-  margin: 0 auto;
-  position: relative;
-}
-
-.tarjeta__imagen {
-  border-radius: inherit;
-  width: 100%;
-  height: 280px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.tarjeta__titulo {
-  color: #084d08;
-  font-size: 22px;
-  margin: 1rem 0;
-}
-
-.tarjeta__texto {
-  color: #0a750a;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.tarjeta__icono {
-  background-color: red;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 30px;
-  width: 30px;
-  display: block;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
-
-.tarjeta__icono i {
-  line-height: 30px;
-}
-
-.avatar, .avatar--small, .avatar--medium, .avatar--large {
-  border-radius: 50%;
-  background-color: grey;
-  padding: 5px;
-}
-
-.avatar--small {
-  width: 100px;
-  height: 100px;
-}
-
-.avatar--medium {
-  width: 300px;
-  height: 300px;
-}
-
-.avatar--large {
-  width: 500px;
-  height: 500px;
-}
-
 .galeria {
   display: -ms-grid;
   display: grid;
@@ -665,6 +480,93 @@ aside {
   margin: 30px;
 }
 
+/* TARJETA QR WHATSAPP PÁGINA CONTACTO */
+.bem {
+  height: 100vh;
+  padding: 5rem 0;
+  margin-bottom: 130px;
+}
+
+.bem__h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: antiquewhite;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 2rem;
+}
+
+.tarjetaWhatsapp {
+  background-color: antiquewhite;
+  -webkit-box-shadow: 5px 10px 10px rgba(10, 43, 0, 0.8);
+          box-shadow: 5px 10px 10px rgba(10, 43, 0, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  padding: 1rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tarjeta__imagen {
+  border-radius: inherit;
+  width: 100%;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tarjeta__titulo {
+  color: #084d08;
+  font-size: 22px;
+  margin: 1rem 0;
+}
+
+.tarjeta__texto {
+  color: #0a750a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.tarjeta__icono {
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.tarjeta__icono i {
+  line-height: 30px;
+}
+
+.avatar, .avatar--small, .avatar--medium, .avatar--large {
+  border-radius: 50%;
+  background-color: grey;
+  padding: 5px;
+}
+
+.avatar--small {
+  width: 100px;
+  height: 100px;
+}
+
+.avatar--medium {
+  width: 300px;
+  height: 300px;
+}
+
+.avatar--large {
+  width: 500px;
+  height: 500px;
+}
+
+/* MEDICAMENTOS */
 .form-medicamentos {
   width: 1000px;
   background: antiquewhite;
@@ -937,11 +839,32 @@ ul {
   .grid {
     margin-top: 50px;
   }
+  .caja2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 95%;
+    height: 100px;
+    padding: 100px;
+    min-height: 50vh;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .grid__flex2 h3 {
+    font-size: 30px;
+    line-height: 10px;
+    margin-top: -30px;
+  }
   .grid__flex .hero__titulo {
-    font-size: 100px;
+    font-size: 10px;
   }
   .grid__flex .hero__parrafo {
     margin-bottom: -100px;
+  }
+  .hero__left img {
+    width: 95%;
+  }
+  .nav__logo {
+    margin-left: 0%;
   }
   .perfu__contenedor {
     -webkit-box-orient: vertical;
@@ -954,9 +877,6 @@ ul {
   }
   .grid__flex .hero__parrafo {
     margin-bottom: -100px;
-  }
-  .grid__flex2 h3 {
-    font-size: 30px;
   }
   .ofertas__grid {
     -ms-grid-columns: 1fr;
