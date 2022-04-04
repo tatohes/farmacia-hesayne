@@ -162,3 +162,14 @@
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width:400px) {
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }   
+    
+    .close{
+        top: 20px;
+        right: 20px;
+    }
+}
