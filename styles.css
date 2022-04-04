@@ -558,37 +558,6 @@ aside {
   height: 500px;
 }
 
-.btn {
-  border-radius: 3px;
-  display: inline-block;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(10, 43, 0, 0.8);
-  -webkit-box-shadow: 0 1px 1px rgba(10, 43, 0, 0.8);
-          box-shadow: 0 1px 1px rgba(10, 43, 0, 0.8);
-}
-
-.btn-green {
-  color: antiquewhite;
-  background-color: rgba(37, 129, 9, 0.8);
-}
-
-.brn-green:hover {
-  background-color: rgba(22, 79, 5, 0.8);
-}
-
-.btn-green:active {
-  background-color: rgba(16, 54, 4, 0.8);
-}
-
-.form-medicamentos {
-  width: 400px;
-  background: #24303c;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-}
-
 .galeria {
   display: -ms-grid;
   display: grid;
@@ -689,6 +658,83 @@ aside {
   text-align: center;
   border-radius: 50%;
   margin: 30px;
+}
+
+.form-medicamentos {
+  width: 1000px;
+  background: antiquewhite;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #053c05;
+  -webkit-box-shadow: 7px 13px 37px;
+          box-shadow: 7px 13px 37px;
+}
+
+.btn {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(10, 43, 0, 0.8);
+  -webkit-box-shadow: 0 1px 1px rgba(10, 43, 0, 0.8);
+          box-shadow: 0 1px 1px rgba(10, 43, 0, 0.8);
+}
+
+.btn-green {
+  color: antiquewhite;
+  background-color: rgba(35, 137, 4, 0.8);
+}
+
+.brn-green:hover {
+  background-color: rgba(22, 79, 5, 0.8);
+}
+
+.btn-green:active {
+  background-color: rgba(16, 54, 4, 0.8);
+}
+
+.form-medicamentos h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.controls {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #024e02;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.form-medicamentos .botons {
+  width: 30%;
+  background: #073c01;
+  border: none;
+  padding: 12px;
+  color: antiquewhite;
+  margin: 16px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.form-medicamentos .campodetexto {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
 }
 
 /* HEADER */
