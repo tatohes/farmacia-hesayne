@@ -88,7 +88,10 @@
     margin-bottom: 5rem;
     max-width: 1600px;
     width: 95%;
+    height: 500px;
+    padding: 100px;
     min-height: 50vh;
+    background: rgba(0,0,0,0.5);
     /* padding: 1rem; */
 }
 
@@ -109,11 +112,13 @@
 .grid__flex2 h3 {
     font-size: 70px;
     line-height: 120px;
+    margin-top: -30px;
 }
 
 .iconitoWapp {
     margin-top: -50px;
 }
+
 
                                         /* TABLA PÁGINA FARMACIAS DE TURNO */
 
@@ -407,6 +412,7 @@ aside {
     gap: 20px;
     padding: 40px 0;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .galeria > a {
@@ -493,7 +499,7 @@ aside {
     border-radius: 20px;
     font-family:  'Playfair Display', serif;
     color: rgb(5, 60, 5);
-    box-shadow: 7px 13px 37px;
+    box-shadow: 7px 13px 37px rgb(3, 30, 3);
 }
 
 
